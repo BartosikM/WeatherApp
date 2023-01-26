@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+    <div class="day">
+        <div class="dayContainer">
+            <p class="hello">Hi!</p>
+            <p class="today">Today is <span class="thatDay"></span></p>
+            <p class="date"></p>
+         </div>
+
+        <div class="mode">
+            <p class="choose">Choose your mode:</p>
+            <button class="dark">DARK</button>
+            <button class="light">LIGHT</button>
+        </div>
+    </div>
+    <div class="weather">
+        <p class="title">Weather for today:</p>
+        <input type="text" placeholder="What is your city?">
+        <button class="send">Send</button>
+        <p class="temp-title">Temperature: <span class="temp"></span></p>
+        <p class="weather-title">Weather:<span class="weather-description"></span></p>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
